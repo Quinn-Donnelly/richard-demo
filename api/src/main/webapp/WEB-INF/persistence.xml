@@ -1,0 +1,13 @@
+<persistence-unit name="com.example.api.catalog">
+    <description>Hibernate EntityManager Demo</description>
+    <class>com.example.GameCharecter</class> 
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <properties>
+        <property name="hibernate.hbm2ddl.auto" value="update"/>
+        <property name="hibernate.connection.username">root</property>
+     	<property name="hibernate.connection.password">password</property>
+     	<property name="hibernate.connection.url">jdbc:oracle:thin:@demo.cgrqikjasg3i.us-east-1.rds.amazonaws.com:1521:orcl</property>
+     	<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+    </properties>
+</persistence-unit>
